@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --primary-color: #0a192f;
+  --secondary-color: #64ffda;
+  --nav-color: #39a7a7;
+  --p-color: darkgrey;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--primary-color);
+  color: white;
+}
+/* Logo */
+.logo {
+  padding: 0 10rem;
+  font-size: 2.5rem;
+  line-height: 8rem;
+  font-weight: bold;
+}
+/* Logo */
+/* Navbar */
+.navbar {
+  background-color: var(--nav-color);
+  margin: 0;
+  padding: 0;
+  height: 8rem;
+  width: 100%;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.6);
+}
+.navbar ul {
+  float: right;
+  margin: 0;
+  padding: 0 10rem;
+}
+.navbar ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-in-out;
+}
+.navbar ul li a:hover,
+.active {
+  border-bottom: 0.3rem solid white;
+  padding: 2.4rem 0;
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+/* Navbar */
+
+/* Profile */
+span {
+  color: var(--nav-color);
+  font-size: 1.8rem;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile {
+  margin: 8rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile h1 {
+  color: #ccd6f6;
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.profile h4,
+#contact h1,
+#about h1,
+.work h1,
+#services h1 {
+  color: var(--p-color);
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0rem;
+}
+.profile p,
+#contact h4,
+#about p,
+#about ul li,
+#contact p {
+  font-size: 1.5rem;
+  color: var(--p-color);
+  width: 80%;
+  padding: 2rem 0;
+  text-transform: uppercase;
+  text-align: justify;
+}
+.btnmail,
+.btncontact {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0.7rem 0.7rem rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 250ms;
+}
+.btnmail:hover,
+.btncontact:hover {
+  opacity: 0.5;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 0.3rem solid var(--secondary-color);
+  transform: translateY(-1rem);
+}
+#profileimg {
+  position: relative;
+  float: left;
+  top: 10rem;
+  left: 0.5rem;
+}
+#profileimg img {
+  width: 28rem;
+  height: 25rem;
+  margin: auto;
+  transition: transform 250ms;
+}
+#profileimg img:hover {
+  transform: translateY(-1rem);
+}
+/* Profile */
+
+/* about */
+.col-md-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#about {
+  color: var(--p-color);
+  padding: 10rem 0;
+  margin: 1rem auto;
+  display: flex;
+}
+#aboutimg {
+  position: relative;
+  float: left;
+  top: 5rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  transition: all 0.5s ease-in-out;
+}
+#aboutimg img {
+  width: 27rem;
+  height: 35rem;
+  margin: auto;
+  box-shadow: 0 0.7rem 0.7rem rgba(0, 0, 0, 0.6);
+  border: 0.3rem solid var(--p-color);
+}
+#aboutimg img:hover {
+  transform: scale(1.1);
+}
+.responsiveimg {
+  width: 100%;
+  height: auto;
+}
+.about p,
+.contactform {
+  padding: 1rem;
+  margin: 0 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0 8rem;
+  margin: auto;
+}
+.vline {
+  border-left: 0.5rem solid var(--nav-color);
+  height: 2.8rem;
+}
+.fa-caret-right {
+  color: var(--secondary-color);
+}
+/* about */
+
+/* Work */
+#work {
+  color: var(--p-color);
+  padding: 10rem 0;
+  margin: 1rem auto;
+  display: flex;
+}
+.alignwork,
+.alignsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 2rem;
+}
+.card .card-title {
+  color: var(--nav-color);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.card .card-text {
+  color: var(--p-color);
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.card {
+  background-color: transparent;
+  box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+  cursor: pointer;
+  text-align: center;
+  width: 30rem;
+  margin: 2rem;
+  padding: 1.5rem;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.work h2,
+#services h2 {
+  color: var(--p-color);
+  text-align: center;
+  padding: 3rem;
+}
+.card-text .icon {
+  display: block;
+  margin: auto;
+  padding: 0.5rem;
+}
+.icon {
+  width: 8rem;
+  height: 8rem;
+  filter: brightness(0) invert(1);
+}
+#services {
+  color: var(--p-color);
+  display: flex;
+}
+/* Work */
+
+/* contact */
+#contact {
+  color: var(--p-color);
+  padding: 10rem 0;
+  margin: 1rem auto;
+}
+#contactinfo {
+  display: flex;
+  position: relative;
+  top: 1rem;
+  left: 0;
+  margin: auto;
+}
+#contactp {
+  margin: 1rem 3rem;
+  text-align: justify;
+}
+#contactinfo ul {
+  float: right;
+  margin: 0 auto;
+  display: flex;
+}
+#contactinfo ul li {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+#contactinfo ul li a {
+  color: var(--nav-color);
+  transition: all 0.3s ease-in-out 0.1ms;
+  font-size: 2rem;
+}
+#contactinfo ul li a:hover {
+  color: var(--secondary-color);
+  transform: translateY(-1rem);
+}
+.contactform {
+  width: 100%;
+}
+input[type="email"],
+.form-control {
+  background-color: transparent;
+  color: #fff !important;
+  font-size: 1.5rem;
+}
+/* Contact */
+
+/* Footer */
+footer a {
+  color: var(--nav-color);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+footer a:hover {
+  color: var(--secondary-color);
+  transform: scale(0.5);
+}
+/* Footer */
+@media (max-width: 1160px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 698px) {
+  html {
+    font-size: 45%;
+  }
+  .navbar ul li a {
+    display: none;
+  }
+  .contactform {
+    width: 50%;
+  }
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 35%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 200px) {
+  html {
+    font-size: 40%;
+  }
+}
